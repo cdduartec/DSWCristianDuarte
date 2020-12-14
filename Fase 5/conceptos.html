@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Conceptos | UNAD</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="jquery, css3, java, sliding, box, menu, cube, navigation, portfolio, thumbnails" />
+	<link rel="icon" type="image/png" href="img/unad-logo.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />	
+	<link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="body">
+<div class="header-cont header-general">
+	<div class="header-color">
+    <div class="menu-top">
+      <div class="menu-principal" id="menu-principal">
+        <div class="logo_fixed">
+            <a class="menu_item" id="btn-inicio" href="inicio.html">
+              <img src="./img/unad-logo-h.png" width="200" alt="">
+            </a>
+        </div>
+        <ul class="menu-resp">
+          <li class="espacio_mobil"></li>
+          <li><a href="inicio.html" title="">Inicio</a></li>
+          <li><a href="conceptos.html" title="">Conceptos</a></li>
+          <li class="menu_item submenu-prin">
+              <a href="#">Recursos</a>
+              <ul>
+                  <li class="submenu-prin">
+                      <a class="menu_item" href="recurso1.html">Recurso 1</a>
+                  </li>
+                  <li class="submenu-prin">
+                      <a class="menu_item" href="recurso2.html">Recurso 2</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="menu_item submenu-prin">
+              <a href="#">Autoevaluación</a>
+              <ul>
+                  <li class="submenu-prin">
+                      <a class="menu_item" href="evaluacion1.html">Evaluación 1</a>
+                  </li>
+                  <li class="submenu-prin">
+                      <a class="menu_item" href="evaluacion2.html">Evaluación 2</a>
+                  </li>
+                  <li class="submenu-prin">
+                      <a class="menu_item" href="evaluaciondelsitio.html">Evaluación del sitio Web</a>
+                  </li>
+              </ul>
+          </li>
+          <li><a href="autor.html" title="">Autor</a></li>
+        </ul>
+      </div>
+    </div>
+		<div class="bar-title">
+			<div class="cont-left">
+				<h1 class="tit-uno">Conceptos</h1>
+				<p>Descripción de conceptos</p>
+			</div>
+			<div class="cont-left">
+				<img class="img-banner" src="./public/img/system/parking.png" alt="">
+			</div>			
+		</div>
+	</div>
+</div>
+<div class="width-100-pto cont-flex cont-just-saro cont-app">
+	<div class="width-100-pto cont-flex cont-just-saro">
+		<div class="width-80-pto">
+			<h2>Estilos Internos</h2>
+			<p>Las diferentes propiedades y valores se pueden poner en una misma línea o en distintas líneas según se prefiera (siempre separados mediante punto y coma).</p>
+
+			<p>Dentro de las etiquetas … incluiremos una etiqueta de apertura de declaración de estilos . En HTML 5 no es necesario especificar type =”text/css” pero de momento seguimos recomendando que se use esta sintaxis.</p>
+		</div>
+		<div class="width-80-pto">
+			<h2>Estilos Externos</h2>
+			<p>
+				Aunque el CSS interno nos permite unificar en una declaración todos los estilos para un archivo html, seguimos teniendo el problema de tener que repetir la definición de estilos en la cabecera de cada uno de los archivos html de nuestro desarrollo web. Si el desarrollo tiene pocos archivos quizás sea menos problemático, pero cuando el desarrollo tiene cientos o miles de archivos sí se convierte en un verdadero problema, ya que cada vez que introdujéramos cambios habría que hacerlo en los cientos o miles de archivos de que constara el desarrollo.
+			</p>
+			<p>
+				Para solventar esta solución se ideó la declaración externa de CSS, basada en declarar los estilos CSS en un archivo independiente que puede servir como referente para dotar de estilos a decenas, cientos o miles de archivos html, que únicamente deberán invocar el nombre de archivo utilizando una sintaxis específica. De este modo un cambio en los estilos habrá que hacerlo únicamente en el archivo de estilos correspondiente, lo cual supone una gran ventaja. Incluso un cambio completo de los estilos de una página web se puede conseguir simplemente sustituyendo el archivo correspondiente.
+			</p>
+		</div>
+		<div class="width-80-pto">
+			<h2>Selectores CSS</h2>
+			      <table aling="center"  border="1"> 
+        <tr>
+          <th> Selector </th>
+          <th> Ejemplo </th>
+          <th> Descricpión del ejemplo </th>
+        </tr>
+        <tr>
+          <td>.class</td>
+          <td>.intro</td>
+          <td>Selecciona todos los elementos con class = "intro"</td>
+        </tr>
+        <tr>
+          <td>.class1.class2</td>
+          <td>.name1.name2</td>
+          <td>Selecciona todos los elementos con name1 y name2 establecidos dentro de su atributo de clase</td>
+        </tr>
+        <tr>
+          <td>.class1 .class2</td>
+          <td>.name1 .name2</td>
+          <td>Selecciona todos los elementos con nombre2 que son descendientes de un elemento con nombre1</td>
+        </tr>
+        <tr>
+          <td>#id</td>
+          <td>#firstname</td>
+          <td>Selecciona el elemento con id = "firstname"</td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>*</td>
+          <td>Selecciona todos los elementos</td>
+        </tr>
+        <tr>
+          <td>element</td>
+          <td>p</td>
+          <td>Selecciona todos los elementos &lt;p&gt;</td>
+        </tr>
+        <tr>
+          <td>element.class</td>
+          <td>p.intro</td>
+          <td>Selecciona todos los &lt;p&gt; elementos con class = "intro"</td>
+        </tr>
+        <tr>
+          <td>element,element</td>
+          <td>div, p</td>
+          <td>Selecciona todos los elementos &lt;div&gt; y todos los elementos &lt;p&gt;</td>
+        </tr>
+        <tr>
+          <td>element element</td>
+          <td>div p</td>
+          <td>Selecciona todos los elementos &lt;p&gt; dentro de los elementos &lt;div&gt;</td>
+        </tr>
+        <tr>
+          <td>element>element</td>
+          <td>div > p</td>
+          <td>Selecciona todos los elementos &lt;p&gt; donde el padre es un elemento &lt;div&gt;</td>
+        </tr>
+        <tr>
+          <td>element+element</td>
+          <td>div + p</td>
+          <td>Selecciona todos los elementos &lt;p&gt; que se colocan inmediatamente después de los elementos &lt;div&gt;</td>
+        </tr>
+        <tr>
+          <td>element1~element2</td>
+          <td>p ~ ul</td>
+          <td>Selecciona todos los elementos &lt;ul&gt; que están precedidos por un elemento &lt;p&gt;</td>
+        </tr>
+        <tr>
+          <td>[attribute]</td>
+          <td>[target]</td>
+          <td>Selecciona todos los elementos con un atributo de destino</td>
+        </tr>
+        <tr>
+          <td>[attribute=value]</td>
+          <td>[target=_blank]</td>
+          <td>Selecciona todos los elementos con target = "_ blank"</td>
+        </tr>
+        <tr>
+          <td>[attribute~=value]</td>
+          <td>[title~=flower]</td>
+          <td>Selecciona todos los elementos con un atributo de título que contiene la palabra "flor"</td>
+        </tr>
+        <tr>
+          <td>[attribute|=value]</td>
+          <td>[lang|=en]</td>
+          <td>Selecciona todos los elementos con un valor de atributo lang que comienza con "en"</td>
+        </tr>
+        <tr>
+          <td>[attribute^=value]</td>
+          <td>a[href^="https"]</td>
+          <td>Selecciona todos los elementos &lt;a&gt; cuyo valor de atributo href comience con "https"</td>
+        </tr>
+        <tr>
+          <td>[attribute$=value]</td>
+          <td>a[href$=".pdf"]</td>
+          <td>Selecciona todos los elementos &lt;a&gt; cuyo valor de atributo href termine en ".pdf"</td>
+        </tr>
+        <tr>
+          <td>[attribute*=value]</td>
+          <td>a[href*="w3schools"]</td>
+          <td>Selecciona cada elemento &lt;a&gt; cuyo valor de atributo href contiene la subcadena "w3schools"</td>
+        </tr>
+        <tr>
+          <td>:active</td>
+          <td>a:active</td>
+          <td>Selecciona el enlace activo</td>
+        </tr>
+        <tr>
+          <td>::after</td>
+          <td>p::after</td>
+          <td>Inserta algo después del contenido de cada elemento &lt;p&gt;</td>
+        </tr>
+        <tr>
+          <td>::before</td>
+          <td>p::before</td>
+          <td>Inserta algo antes del contenido de cada elemento &lt;p&gt;</td>
+        </tr>
+        <tr>
+          <td>:checked</td>
+          <td>input:checked</td>
+          <td>Selecciona cada elemento &lt;input&gt; marcado</td>
+        </tr>
+        <tr>
+          <td>:default</td>
+          <td>input:default</td>
+          <td>Selecciona el elemento &lt;input&gt; predeterminado</td>
+        </tr>
+        <tr>
+          <td>:disabled</td>
+          <td>input:disabled</td>
+          <td>Selecciona todos los elementos &lt;input&gt; desactivados</td>
+        </tr>
+        <tr>
+          <td>:empty</td>
+          <td>p:empty</td>
+          <td>Selecciona todos los elementos &lt;p&gt; que no tienen hijos (incluidos los nodos de texto)</td>
+        </tr>
+        <tr>
+          <td>:enabled</td>
+          <td>input:enabled</td>
+          <td>Selecciona cada elemento &lt;input&gt; habilitado</td>
+        </tr>
+        <tr>
+          <td>:first-child</td>
+          <td>p:first-child</td>
+          <td>Selecciona cada elemento &lt;p&gt; que es el primer hijo de su padre</td>
+        </tr>
+        <tr>
+          <td>::first-letter</td>
+          <td>p::first-letter</td>
+          <td>Selecciona la primera letra de cada elemento &lt;p&gt;</td>
+        </tr>
+        <tr>
+          <td>::first-line</td>
+          <td>p::first-line</td>
+          <td>Selecciona la primera línea de cada elemento &lt;p&gt;</td>
+        </tr>
+        <tr>
+          <td>:first-of-type</td>
+          <td>p:first-of-type</td>
+          <td>Selecciona cada elemento &lt;p&gt; que es el primer elemento &lt;p&gt; de su padre</td>
+        </tr>
+        <tr>
+          <td>:focus</td>
+          <td>input:focus</td>
+          <td>Selecciona el elemento de entrada que tiene el foco</td>
+        </tr>
+        <tr>
+          <td>:hover</td>
+          <td>a:hover</td>
+          <td>Selecciona enlaces al pasar el mouse sobre</td>
+        </tr>
+        <tr>
+          <td>:in-range</td>
+          <td>input:in-range</td>
+          <td>Selecciona elementos de entrada con un valor dentro de un rango especificado</td>
+        </tr>
+        <tr>
+          <td>:indeterminate</td>
+          <td>input:indeterminate</td>
+          <td>Selecciona elementos de entrada que están en un estado indeterminado</td>
+        </tr>
+        <tr>
+          <td>:invalid</td>
+          <td>input:invalid</td>
+          <td>Selecciona todos los elementos de entrada con un valor no válido</td>
+        </tr>
+        <tr>
+          <td>:lang(language)</td>
+          <td>p:lang(it)</td>
+          <td>Selecciona todos los elementos &lt;p&gt; con un atributo lang igual a "it" (italiano)</td>
+        </tr>
+        <tr>
+          <td>:last-child</td>
+          <td>p:last-child</td>
+          <td>Selecciona cada elemento &lt;p&gt; que es el último hijo de su padre</td>
+        </tr>
+        <tr>
+          <td>:last-of-type</td>
+          <td>p:last-of-type</td>
+          <td>Selecciona cada elemento &lt;p&gt; que es el último elemento &lt;p&gt; de su padre</td>
+        </tr>
+        <tr>
+          <td>:link</td>
+          <td>a:link</td>
+          <td>Selecciona todos los enlaces no visitados</td>
+        </tr>
+        <tr>
+          <td>:not(selector)</td>
+          <td>:not(p)</td>
+          <td>Selecciona todos los elementos que no son un elemento &lt;p&gt;</td>
+        </tr>
+        <tr>
+          <td>:nth-child(n)</td>
+          <td>p:nth-child(2)</td>
+          <td>Selecciona cada elemento &lt;p&gt; que es el segundo hijo de su padre</td>
+        </tr>
+        <tr>
+          <td>:nth-last-child(n)</td>
+          <td>p:nth-last-child(2)</td>
+          <td>Selecciona cada elemento &lt;p&gt; que es el segundo hijo de su padre, contando desde el último hijo</td>
+        </tr>
+        <tr>
+          <td>:nth-last-of-type(n)</td>
+          <td>p:nth-last-of-type(2)</td>
+          <td>Selecciona cada elemento &lt;p&gt; que es el segundo elemento &lt;p&gt; de su padre, contando desde el último hijo</td>
+        </tr>
+        <tr>
+          <td>:nth-of-type(n)</td>
+          <td>p:nth-of-type(2)</td>
+          <td>Selecciona cada elemento &lt;p&gt; que es el segundo elemento &lt;p&gt; de su padre</td>
+        </tr>
+        <tr>
+          <td>:only-of-type</td>
+          <td>p:only-of-type</td>
+          <td>Selecciona cada elemento &lt;p&gt; que es el único elemento &lt;p&gt; de su padre</td>
+        </tr>
+        <tr>
+          <td>:only-child</td>
+          <td>p:only-child</td>
+          <td>Selecciona cada elemento &lt;p&gt; que es el único hijo de su padre</td>
+        </tr>
+        <tr>
+          <td>:optional</td>
+          <td>input:optional</td>
+          <td>Selecciona elementos de entrada sin atributo "obligatorio"</td>
+        </tr>
+        <tr>
+          <td>:out-of-range</td>
+          <td>input:out-of-range</td>
+          <td>Selecciona elementos de entrada con un valor fuera de un rango especificado</td>
+        </tr>
+        <tr>
+          <td>::placeholder</td>
+          <td>input::placeholder</td>
+          <td>Selecciona elementos de entrada con el atributo "marcador de posición" especificado</td>
+        </tr>
+        <tr>
+          <td>:read-only</td>
+          <td>input:read-only</td>
+          <td>Selecciona elementos de entrada con el atributo "readonly" especificado</td>
+        </tr>
+        <tr>
+          <td>:read-write</td>
+          <td>input:read-write</td>
+          <td>Selecciona elementos de entrada con el atributo "solo lectura" NO especificado</td>
+        </tr>
+        <tr>
+          <td>:required</td>
+          <td>input:required</td>
+          <td>Selecciona elementos de entrada con el atributo "obligatorio" especificado</td>
+        </tr>
+        <tr>
+          <td>:root</td>
+          <td>:root</td>
+          <td>Selecciona el elemento raíz del documento.</td>
+        </tr>
+        <tr>
+          <td>::selection</td>
+          <td>::selection</td>
+          <td>Selecciona la parte de un elemento que selecciona un usuario</td>
+        </tr>
+        <tr>
+          <td>:target</td>
+          <td>#news:target</td>
+          <td>Selecciona el elemento #news activo actual (se hace clic en una URL que contiene ese nombre de ancla)</td>
+        </tr>
+        <tr>
+          <td>:valid</td>
+          <td>input:valid</td>
+          <td>Selecciona todos los elementos de entrada con un valor válido</td>
+        </tr>
+        <tr>
+          <td>:visited</td>
+          <td>a:visited</td>
+          <td>Selecciona todos los enlaces visitados</td>
+        </tr>     
+       </table>
+		</div>
+	</div>
+</div>
+</div>
+<footer>
+	<p>Copyright © 2020 | UNAD - Universidad Nacional Abierta y a Distancia</p> <img height="35px" src="./img/unad-logo-h.png" alt="">	
+</footer>
+</body>
+</html>
